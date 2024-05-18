@@ -1,0 +1,15 @@
+.welcome {
+    font-size: 30px;
+    position: fixed;
+    left: 200px;
+    top: 300px;
+    color: aliceblue;
+}
+
+.welcome .text {
+    font-size: 15px;
+    position: fixed;
+    left: 210px;
+    top: 350px;
+    color: #fff;
+}

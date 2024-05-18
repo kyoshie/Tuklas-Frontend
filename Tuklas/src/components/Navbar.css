@@ -1,0 +1,77 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.name {
+    font-size: 32px;
+    color: #fff;
+    font-weight: 500;
+    left: 0px;
+}
+
+.navbar button {
+    position: relative;
+    font-size: 18px;
+    font-weight: 300;
+    margin-left: 40px;
+    background: transparent;
+    border: none;
+    color: #fff;
+}
+
+.navbar button::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background:#fff;
+    width: 0%;
+    height: 2px;
+    transition: .3s;
+}
+
+.navbar button:hover::before {
+    width: 100%;
+
+}
+
+
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.overlay {
+    background: rgba (49,49,49 .08);
+}
+
+.modal-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 14px 28px;
+    border-radius: 3px;
+    max-width: 600px;
+    min-width: 300px;
+}
