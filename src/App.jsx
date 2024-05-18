@@ -1,25 +1,13 @@
-import Login from './components/Login';
-import Navbar from './components/Navbar';
-import Intro from './components/Intro';
+import Navbar from './components/Navbar/Navbar';
+import Intro from './components/Intro/Intro';
 
 function App() {
-
-  return (
-    <>
-      <div>
-        <Login/>
-      </div>
-
-      <div>
-        <Navbar/> 
-      </div>
-
-      <div>
-        <Intro/>
-      </div>
-
-    </>
-  )
+	return (
+		<>
+			<Navbar/> 
+			<Intro/>
+		</>
+	)
 }
 
 export default App

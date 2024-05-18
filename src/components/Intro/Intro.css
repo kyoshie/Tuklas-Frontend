@@ -1,0 +1,18 @@
+.welcome {
+    height: 100vh;
+    font-size: 30px;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.welcome .inner {
+    width: 70%;
+}
+
+.welcome .text {
+    font-size: 15px;
+    color: #fff;
+}
