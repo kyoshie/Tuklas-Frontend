@@ -14,11 +14,10 @@ const Navbar = () => {
       <a href="/" className="name">Tuklas Art Gallery</a>
 
       <nav className="navbar">
-        <button> Home </button>
-        <button> About </button>
-        <button onClick={toggleModal}> Login </button>
-        <button> Sign Up </button>
-        <button> Contacts </button>
+        <a> Home </a>
+        <a> About </a>
+        <a href="/login"> Sign In </a>
+        <a> Contacts </a>
       </nav>
     </header>
   )

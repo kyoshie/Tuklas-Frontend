@@ -18,7 +18,7 @@
     left: 0px;
 }
 
-.navbar button {
+.navbar a {
     position: relative;
     font-size: 18px;
     font-weight: 300;
@@ -28,7 +28,7 @@
     color: #fff;
 }
 
-.navbar button::before {
+.navbar a::before {
     content: '';
     position: absolute;
     top: 100%;
@@ -39,7 +39,7 @@
     transition: .3s;
 }
 
-.navbar button:hover::before {
+.navbar a:hover::before {
     width: 100%;
 
 }
