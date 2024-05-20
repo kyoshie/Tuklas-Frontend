@@ -14,10 +14,10 @@ const Navbar = () => {
       <a href="/" className="name">Tuklas Art Gallery</a>
 
       <nav className="navbar">
-        <a> Home </a>
-        <a> About </a>
+        <a href="/"> Home </a>
+        <a href="/about"> About </a>
         <a href="/login"> Sign In </a>
-        <a> Contacts </a>
+        <a href="/contacts"> Contacts </a>
       </nav>
     </header>
   )
