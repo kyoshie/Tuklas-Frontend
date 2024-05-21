@@ -11,8 +11,8 @@ const LoginPage = () => {
   const modalStyle = {display: "flex", flexDirection: "column", padding: "0px 8px 0px 8px"};
   const inputStyle = {
     padding: "10px",
-    margin: "2px",
-    borderRadius: "2px",
+    margin: "9px",
+    borderRadius: "20px",
     border: "solid 1px white",
     background: "none",
     color: "white",
@@ -22,10 +22,10 @@ const LoginPage = () => {
   return (
     <div className="container">
       <div style={{
-        backgroundColor: "#7469B6",
-        height: "300px",
+        backgroundColor: "transparent",
+        height: "500px",
         borderRadius: "2px",
-        padding: "4px",
+        padding: "10px",
         width: "30%",
       }}>
         <h1 style={{textAlign: "center", marginBottom: "40px"}}>{isLogin ? "Login" : "Register"}</h1>
@@ -39,6 +39,8 @@ const LoginPage = () => {
             </div>
           ) : (
             <div style={modalStyle}>
+              <input style={inputStyle} type="text" placeholder="Firstname" />
+              <input style={inputStyle} type="text" placeholder="Lastname" />
               <input style={inputStyle} type="text" placeholder="Username" />
               <input style={inputStyle} type="password" placeholder="Password" />
               <button className="login-signup-button">Register</button>
