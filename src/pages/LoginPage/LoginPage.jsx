@@ -34,7 +34,7 @@ const LoginPage = () => {
             <div style={modalStyle}>
               <input style={inputStyle} type="text" placeholder="Username" />
               <input style={inputStyle} type="password" placeholder="Password" />
-              <button className="login-signup-button">Login</button>
+              <button className="login-signup-button" onClick={() => location.href = "/home"}>Login</button>
               <p class="undertext" onClick={toggleLoginRegister}>Don't have an account? Register</p>
             </div>
           ) : (
