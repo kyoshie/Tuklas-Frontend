@@ -1,0 +1,50 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.name {
+    font-size: 32px;
+    color: #fff;
+    font-weight: 500;
+    left: 0px;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    font-weight: 300;
+    margin-left: 40px;
+    background: transparent;
+    border: none;
+    color: #fff;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background:#fff;
+    width: 0%;
+    height: 2px;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+
+}
+
+.modal {
+    position: fixed;
+    height: 100%;
+}

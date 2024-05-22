@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
 import './Home.css'
-// import HomePageNav from '../../components/HomePageNav/HomePageNav';
+import HomePageNav from '../../components/HomePageNav/HomePageNav';
+import Intro from '../../components/Intro/Intro';
 
 
 
 const Home = () => {
 
     return (
-
-        <h1> Page</h1>
+        <>
+            <HomePageNav/>
+            <Intro/>
+        </>
 
     )
 
