@@ -1,0 +1,28 @@
+.welcome {
+    height: 100vh;
+    font-size: 30px;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.welcome .about {
+    width: 70%;
+}
+
+.welcome .about-text {
+    font-size: 20px;
+    color: #fff;
+}
+
+.welcome .mission {
+    width: 70%;
+
+}
+
+.welcome .mission-text {
+    font-size: 20px;
+    color: #fff;
+}
