@@ -5,6 +5,8 @@ import Error from './pages/Error/Error';
 import LoginPage from './pages/LoginPage/LoginPage';
 import Home from './pages/HomePage/Home';
 import About from './pages/About/About';
+import HomePageNav from './components/HomePageNav/HomePageNav';
+import Navbar from './components/Navbar/Navbar';
 
 export const router = createBrowserRouter([
   {
@@ -14,14 +16,24 @@ export const router = createBrowserRouter([
   },
   {
     path: "/login",
-    element: <LoginPage />,
+    element: <>
+      <LoginPage />
+      <Navbar/>
+    </>
   },
   {
     path: "/home",
-    element: <Home />,
+    element: <>
+    <Home/>
+    <HomePageNav/>
+      </>
   },
   {
     path: "/about",
-    element: <About />,
+    element: <>
+        <About />
+        <Navbar/>
+    </>
+  
   }
 ]);
