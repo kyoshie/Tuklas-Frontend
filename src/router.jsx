@@ -7,6 +7,7 @@ import Home from './pages/HomePage/Home';
 import About from './pages/About/About';
 import HomePageNav from './components/HomePageNav/HomePageNav';
 import Navbar from './components/Navbar/Navbar';
+import Marketplace from './pages/Marketplace/Marketplace';
 
 export const router = createBrowserRouter([
   {
@@ -33,6 +34,14 @@ export const router = createBrowserRouter([
     element: <>
         <About />
         <Navbar/>
+    </>
+  
+  },
+  {
+    path: "/marketplace",
+    element: <>
+        <Marketplace />
+        <HomePageNav/>
     </>
   
   }
