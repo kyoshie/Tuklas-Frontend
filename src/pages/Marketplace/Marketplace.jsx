@@ -7,10 +7,13 @@ const Marketplace = () => {
     return (
         <div className='market'>
         <div className="inner">
-            <div className='nft1'>
-            <h1>Title: I am groot</h1>
-            <p>Description: I like Guardians of the Galaxy</p>
-          </div>
+            <div class="card">
+            <img src="place holder.jpg" alt="Avatar" style="width:100%">
+            <div class="container">
+            <h4><b>Title</b></h4>
+            <p>Description</p>
+            </div>
+            </div>
         </div>
         </div>
 
