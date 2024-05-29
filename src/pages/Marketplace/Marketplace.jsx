@@ -1,23 +1,31 @@
 import React, { useState } from 'react';
 import "./Marketplace.css";
+import Cards from "../../components/Cards/Cards";
 
 
 const Marketplace = () => {
 
     return (
         <div className='market'>
-        <div className="inner">
-            <div class="card">
-            <img src="place holder.jpg" alt="Avatar" style="width:100%">
-            <div class="container">
-            <h4><b>Title</b></h4>
-            <p>Description</p>
+            <div className='inner'>
+                <Cards/>
+                <Cards/>
+                <Cards/>
+                <Cards/>
+                <Cards/>
+                <Cards/>
+                <Cards/>
+                <Cards/>
+                <Cards/>
+                <Cards/>
+                <Cards/>
+                <Cards/>
+                <Cards/>
+                <Cards/>
             </div>
-            </div>
-        </div>
         </div>
 
-    )
+    )   
 
 
 }

@@ -1,0 +1,40 @@
+.card {
+    border: 1px solid hsl(160, 43%, 41%, 0.3);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px hsla(192, 0%, 0%, 0.3);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    max-width: 250px;
+    display: inline-block;
+}
+
+.card .card-image{
+    max-width: 60%;
+    height: auto;
+    margin-bottom: 10px;
+
+}
+
+.card .card-title {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: aliceblue;
+}
+
+.card .card-description{
+    font-family: Arial, sans-serif;
+    color: aliceblue;
+}
+
+.card .button {
+    background-color:#04AA6D;
+    border: none;
+    color: white;
+    margin-top: 10px;
+    padding: 13px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+}
