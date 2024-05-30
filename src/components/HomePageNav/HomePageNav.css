@@ -28,23 +28,3 @@
     color: #fff;
 }
 
-.navbar a::before {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background:#fff;
-    width: 0%;
-    height: 2px;
-    transition: .3s;
-}
-
-.navbar a:hover::before {
-    width: 100%;
-
-}
-
-.modal {
-    position: fixed;
-    height: 100%;
-}

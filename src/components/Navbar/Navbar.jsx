@@ -12,12 +12,10 @@ const Navbar = () => {
   return(
     <header className="header">
       <a href="/" className="name">Tuklas Art Gallery</a>
-
       <nav className="navbar">
         <a href="/"> Home </a>
         <a href="/about"> About </a>
         <a href="/login"> Sign In </a>
-        <a href="/contacts"> Contacts </a>
       </nav>
     </header>
   )
