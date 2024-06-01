@@ -18,6 +18,10 @@
     left: 0px;
 }
 
+.web:hover{
+    color: orange;
+}
+
 .nav a {
     position: relative;
     font-size: 18px;
