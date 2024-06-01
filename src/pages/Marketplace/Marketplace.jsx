@@ -21,7 +21,7 @@ const Marketplace = () => {
             }
 
             setUploading(false);
-        }, 2000); // Simulate 2 seconds of uploading
+        }, 2000); 
     };
 
     return (
