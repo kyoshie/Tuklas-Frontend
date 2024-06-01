@@ -1,4 +1,4 @@
-.header {
+.head {
     position: fixed;
     top: 0;
     left: 0;
@@ -11,14 +11,14 @@
     z-index: 100;
 }
 
-.name {
+.web {
     font-size: 32px;
     color: #fff;
     font-weight: 500;
     left: 0px;
 }
 
-.navbar a {
+.nav a {
     position: relative;
     font-size: 18px;
     font-weight: 300;
@@ -26,5 +26,15 @@
     background: transparent;
     border: none;
     color: #fff;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: orange;
+}
+
+.nav a.active {
+    color: orange;
+
 }
 

@@ -17,6 +17,7 @@
     font-weight: 500;
     left: 0px;
 }
+
 .name:hover {
     color:orange;
 }
@@ -28,9 +29,13 @@
     margin-left: 40px;
     background: transparent;
     border: none;
-    color: orange;
+    color: white;
 }
 
 .navbar a:hover{
+    color: orange;
+}
+
+.navbar a.active{
     color: orange;
 }
