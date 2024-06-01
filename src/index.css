@@ -13,7 +13,7 @@ a {
 }
 
 body {
-    background: url("public/bg.jpg");
+    background: url("/public/bg.jpg");
     background-position: 50% 50%;
     background-size: cover;
     height: 100vh;
