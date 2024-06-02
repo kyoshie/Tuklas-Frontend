@@ -10,7 +10,7 @@ const Profile = () => {
         password: '',
         email: 'eliana@example.com',
         contactNumber: '123-456-7890',
-        profileImage: '/public/1.jpg' 
+        profileImage: '1.jpg' 
     });
 
     const handleChange = (e) => {
@@ -77,13 +77,7 @@ const Profile = () => {
                         onChange={handleChange} 
                         placeholder="Username" 
                     />
-                    <input 
-                        type="password" 
-                        name="password" 
-                        value={profile.password} 
-                        onChange={handleChange} 
-                        placeholder="Password" 
-                    />
+                   
                     <input 
                         type="email" 
                         name="email" 
