@@ -1,0 +1,50 @@
+.gal-card {
+    border: 1px solid hsla(160, 43%, 41%, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    text-align: center; 
+    max-width: 230px;
+    display: inline-block;
+    background-color: #222831; 
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.gal-card .galCard-image {
+    max-width: 60%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.gal-card .galCard-title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: bold; 
+}
+
+.gal-card .galCard-description {
+    font-family: 'Arial', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    color: aliceblue;
+    line-height: 1.5;
+}
+
+.gal-card .galCard-price {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+.gal-card .galCard-status {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: lighter;
+
+}

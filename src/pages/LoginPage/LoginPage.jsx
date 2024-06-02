@@ -22,7 +22,7 @@ const LoginPage = () => {
   return (
     <div className="container">
       <div style={{
-        backgroundColor: "transparent",
+        backgroundColor: "trasparent",
         height: "500px",
         borderRadius: "2px",
         padding: "10px",

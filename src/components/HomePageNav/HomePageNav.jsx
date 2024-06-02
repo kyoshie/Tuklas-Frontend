@@ -12,7 +12,7 @@ const HomePageNav = () => {
 
   return (
     <header className="head">
-      <a href="/" className="web">Tuklas Art Gallery</a>
+      <a href="/home" className="web">Tuklas Art Gallery</a>
 
       <nav className="nav">
         <a href="/profile" className={location.pathname === '/profile' ? 'active' : ''}>Profile</a>
