@@ -1,7 +1,7 @@
 {
     "functions": {
       "api": {
-        "runtime": "nodejs",
+        "runtime": "Node.js",
         "memory": 512,
         "maxDuration": 30
       }
