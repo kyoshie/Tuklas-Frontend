@@ -9,9 +9,9 @@ const Marketplace = () => {
         const file = event.target.files[0];
         setUploading(true);
 
-        // Simulate upload process
+      
         setTimeout(() => {
-            // Simulate success or failure
+         
             const success = Math.random() > 0.5;
 
             if (success) {
@@ -38,6 +38,9 @@ const Marketplace = () => {
                         id="fileUpload"
                     />
                 </div>
+                <Cards />
+                <Cards />
+                <Cards />
                 <Cards />
                 <Cards />
                 <Cards />

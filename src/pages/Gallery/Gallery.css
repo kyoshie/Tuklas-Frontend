@@ -6,18 +6,6 @@
     padding: 10em;
 }
 
-.header {
-    color: white;
-    font-size: 30px;
-    font-weight: normal;
-    top:60px;
-}
-
-.header:hover {
-    color: orange;
-}
-
-
 .gallery .contents {
     display: flex;
     flex-wrap: wrap;
@@ -25,4 +13,22 @@
     overflow-y: scroll;
 }
 
+.my-gallery{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
 
+.page-title {
+    background-color:transparent;
+    border: none;
+    color: #fff; 
+    padding: 12px 25px;
+    font-size: 30px;
+    border-radius: 5px;
+}
+
+.page-title:hover{
+    color: orange;
+}

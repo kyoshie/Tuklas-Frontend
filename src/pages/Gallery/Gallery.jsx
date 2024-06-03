@@ -5,9 +5,11 @@ import GalleryCards from "../../components/Cards/GalleryCards";
 const Gallery = () => {
     return (
         <div className='gallery'>
-        <h1 className='header'>My Gallery</h1>
             <div className='contents'>
-               <GalleryCards/>
+                <div className='my-gallery'>
+                    <h1 className='page-title'>My Gallery</h1>
+                </div>
+                <GalleryCards/>
                <GalleryCards/>
                <GalleryCards/>
                <GalleryCards/>
@@ -27,6 +29,7 @@ const Gallery = () => {
                <GalleryCards/>
             </div>
         </div>
+        
 
     )
 
