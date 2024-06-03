@@ -21,7 +21,7 @@
 }
 
 .upload-button {
-    background-color: #04AA6D;
+    background-color:  #007bff;
     border: none;
     color: #fff; 
     padding: 12px 25px;
@@ -32,6 +32,6 @@
 }
 
 .upload-button:hover {
-    background-color: #028a58; 
+    background-color:#0056b3; 
     transform: translateY (-3px);
 }
