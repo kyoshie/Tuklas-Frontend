@@ -1,7 +1,9 @@
 {
     "functions": {
       "api": {
-        "handler": "server.js"
+        "runtime": "nodejs14.x",
+        "memory": 512,
+        "maxDuration": 30
       }
     },
     "routes": [
