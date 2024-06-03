@@ -11,7 +11,7 @@ const Navbar = () => {
   }
 
   return(
-    <header className="header">
+    <header className="nav-header">
       <a href="/" className="name">Tuklas Art Gallery</a>
       <nav className="navbar">
         <a href="/" className={location.pathname === '/' ? 'active' : ''}> Home </a>

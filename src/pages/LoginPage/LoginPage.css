@@ -12,7 +12,7 @@
     height: 40px;
     border: none;
     border-radius: 30px;
-    width: 500px;
+    width: 100%;
 }
 
 .login-signup-button:hover {
@@ -33,4 +33,29 @@
 
 .undertext:hover {
     text-decoration: underline;
+}
+
+.login-modal {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 8px 0px 8px;
+}
+
+.login-inner-container {
+    background-color: transparent;
+    height: 500px;
+    border-radius: 2px;
+    padding: 10px;
+    width: 30%;
+}
+
+.login-register-input {
+    padding: 10px;
+    margin-bottom: 9px;
+    border-radius: 20px;
+    border: solid 1px white;
+    background: none;
+    color: white;
+    outline: none;
+    width: 100%;
 }
