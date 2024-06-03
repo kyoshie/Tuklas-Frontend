@@ -4,7 +4,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 const Cards = () => {
     return (
         <div className="card">
-            <img className="card-image" src="place holder.jpg" alt="art" />
+            <img className="card-image" src="gg.jpg" alt="art" />
             <h2 className='card-title'>Title</h2>
             <p className='card-description'>Description</p>  
             <p className='card-price'>Price</p>

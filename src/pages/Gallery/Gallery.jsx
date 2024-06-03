@@ -9,7 +9,9 @@ const Gallery = () => {
                 <div className='my-gallery'>
                     <h1 className='page-title'>My Gallery</h1>
                 </div>
-                <GalleryCards/>
+               <GalleryCards/>
+               <GalleryCards/>
+               <GalleryCards/>
                <GalleryCards/>
                <GalleryCards/>
                <GalleryCards/>

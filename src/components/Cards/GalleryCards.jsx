@@ -4,7 +4,7 @@ const GalleryCards = () => {
 
     return (
         <div className="gal-card">
-            <img className="galCard-image"src = "place holder.jpg" alt= "art"></img>
+            <img className="galCard-image"src = "arts.jpg" alt= "art"></img>
             <h2 className='galCard-title'>Title</h2>
             <p className='galCard-description'>Description</p>  
             <p className='galCard-price'>Price</p>
