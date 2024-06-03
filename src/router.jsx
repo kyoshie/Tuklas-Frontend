@@ -11,7 +11,10 @@ import Marketplace from './pages/Marketplace/Marketplace';
 import Gallery from './pages/Gallery/Gallery';
 import Profile from './pages/Profile/Profile';
 import Admin from "./pages/Admin/Admin";
-
+import AdminProfile from "./pages/AdminProfile/AdminProfile";
+import AdminNav from './components/Navbar/AdminNav';
+import Arts from './pages/Arts/Arts';
+import AdminHome from './pages/HomePage/AdminHome';
 
 
 
@@ -72,9 +75,35 @@ export const router = createBrowserRouter([
     path: "/admin",
     element: <>
         <Admin />
-        <HomePageNav/>
+        <AdminNav/>
     </>
   
   },
+  {
+    path: "/adminprofile",
+    element: <>
+        <AdminProfile />
+        <AdminNav/>
+    </>
+  
+  },
+  {
+    path: "/arts",
+    element: <>
+        <Arts />
+        <AdminNav/>
+    </>
+  
+  },
+  {
+    path: "/adminhome",
+    element: <>
+        <AdminHome />
+        <AdminNav/>
+    </>
+  
+  },
+  
+
   
 ]);

@@ -1,12 +1,12 @@
+import AdminNav from "../../components/Navbar/AdminNav"
 
 const Admin =() => {
     return (
-
-        <div classname="Admin">
-
-
-        </div>
-
+        <>
+            <AdminNav/>
+            
+        
+        </>
     )
 
 }

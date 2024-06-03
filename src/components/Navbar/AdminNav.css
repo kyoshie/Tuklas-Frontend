@@ -1,0 +1,41 @@
+.admin {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background:transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 32px;
+    color: #fff;
+    font-weight: 500;
+    left: 0px;
+}
+
+.logo:hover {
+    color:orange;
+}
+
+.admin-nav a {
+    position: relative;
+    font-size: 18px;
+    font-weight: 300;
+    margin-left: 40px;
+    background: transparent;
+    border: none;
+    color: white;
+}
+
+.admin-nav a:hover{
+    color: orange;
+}
+
+.admin-nav a.active{
+    color: orange;
+}
