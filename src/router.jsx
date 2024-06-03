@@ -9,7 +9,7 @@ import HomePageNav from './components/HomePageNav/HomePageNav';
 import Navbar from './components/Navbar/Navbar';
 import Marketplace from './pages/Marketplace/Marketplace';
 import Gallery from './pages/Gallery/Gallery';
-import Profile from './pages/Profile/Profile';
+
 
 
 
@@ -58,13 +58,5 @@ export const router = createBrowserRouter([
     </>
   
   },
-  {
-    path: "/profile",
-    element: <>
-        <Profile />
-        <HomePageNav/>
-    </>
   
-  },
- 
 ]);
