@@ -10,6 +10,7 @@ import Navbar from './components/Navbar/Navbar';
 import Marketplace from './pages/Marketplace/Marketplace';
 import Gallery from './pages/Gallery/Gallery';
 import Profile from './pages/Profile/Profile';
+import Admin from "./pages/Admin/Admin";
 
 
 
@@ -63,6 +64,14 @@ export const router = createBrowserRouter([
     path: "/profile",
     element: <>
         <Profile />
+        <HomePageNav/>
+    </>
+  
+  },
+  {
+    path: "/admin",
+    element: <>
+        <Admin />
         <HomePageNav/>
     </>
   
