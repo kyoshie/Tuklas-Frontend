@@ -83,6 +83,10 @@
     border-color: transparent;
     padding: 20px;
 }
+.artCard-details:hover{
+    text-decoration: underline;
+
+}
 
 .modal {
     display: flex;
