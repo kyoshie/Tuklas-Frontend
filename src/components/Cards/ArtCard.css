@@ -9,6 +9,7 @@
     background-color:   #222831; 
     transition: transform 0.3s, box-shadow 0.3s;
     justify-content:space-between;
+    position: relative;
 
 }
 
@@ -51,6 +52,8 @@
     align-items: center;
     justify-content:space-between;
     gap: 8px;
+    margin-left: 10px;
+ 
 }
 
 .artCard-details {
@@ -67,7 +70,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed; 
     z-index: 1; 
     left: 0;
     top: 0;
@@ -75,6 +77,7 @@
     height: 100%; 
     overflow: auto; 
     background-color: rgba(0,0,0,0.4); 
+    position: absolute;
 }
 
 .modal-content {
@@ -85,6 +88,11 @@
     max-width: 500px;
     border-radius: 8px;
     text-align: left;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 }
 
 .close {

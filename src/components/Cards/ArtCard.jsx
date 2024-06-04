@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './ArtCard.css';
 
+
 const ArtCards = () => {
     const [showDetails, setShowDetails] = useState(false);
 
@@ -26,7 +27,7 @@ const ArtCards = () => {
                         <h2>Title: Gojo</h2>
                         <p>Description: An artwork for Gojo Fans.</p>
                         <p>Artist: Eliana</p>
-                        <p>Contact: Eliana@.com</p>
+                        <p>Contact: 09673212971</p>
                         <p>Price: $500</p>
                     </div>
                 </div>
