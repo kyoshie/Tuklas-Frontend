@@ -1,14 +1,18 @@
 import './AdminProfile.css';
 
-
-
 const AdminProfile = () => {
-    return(
+    return (
+        <div className="admin-profile"> 
+            <div className='admin-info'>
+                
 
-        <div>
 
 
+
+            </div>
         </div>
+
+
 
 
 
@@ -16,6 +20,10 @@ const AdminProfile = () => {
     )
 
 
+
+
+
 }
+
 
 export default AdminProfile
