@@ -9,67 +9,130 @@
 }
 
 .admin-info {
-    background: rgba(255, 255, 255, 0.7);
+    background: #f2f2f2; /* Light gray background for contrast */
     height: 80%;
     width: 78%;
-    padding: 5em;
+    padding: 3em;
     display: flex;  
-    flex-direction: center;
-    justify-content: space-between;
+    justify-content: space-between; /* Space between image and text container */
     position: relative;
+    border-radius: 10px;
 }
 
 .image-profile {
     height: 100%;
-    width: 50%;
+    width: 45%;
     object-fit: cover;
     border-radius: 10px;
 }
 
+.text-info {
+    width: 50%; /* Container for text info */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the left */
+    padding-left: 2em;
+}
+
+.name-section, .bio-section {
+    width: 100%;
+}
+
+.label {
+    font-size: 1.5em;
+    color: #222831;
+    margin-bottom: 0.2em;
+    display: block; /* Block-level element */
+}
+
 .admin-name {
     color: #222831;
-    text-align: right;
-    position: absolute; 
-    top: 13%;
-    transform: translateY(-50%); 
-    right: 1em; 
-    right:17%;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
 }
 
-.role {
+.bio {
     color: #222831;
-    text-align: right;
-    position: absolute; 
-    top: 17%;
-    transform: translateY(-50%); 
-    right: 1em; 
-    right:20%;
-
+    font-size: 1.5em;
+    margin-bottom: 1em;
 }
 
-.information {
-    text-align: right;
-    position: absolute; 
-    top: 30%;
-    transform: translateY(-50%); 
-    right: 1em; 
-    right:15%;
-
+.contact-info {
+    color: #222831;
+    margin-bottom: 2em;
 }
 
-.see-arts {
+.contact-info p {
+    font-size: 1.2em;
+    margin: 0.3em 0;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-info svg {
+    margin-right: 0.5em;
+}
+
+.button-group {
+    display: flex;
+    gap: 1em;
+}
+
+.see-arts, .edit-profile, .save-profile, .cancel-edit {
     display: inline-block;
     padding: 10px 20px;
-    margin-top: 42%;
-    margin-right: 15%;
     background-color: #3498db;
     color: white;
     text-align: center;
     border-radius: 5px;
     transition: background-color 0.3s;
-    height: 40px;
+    text-decoration: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
 }
 
-.see-arts:hover {
+.see-arts:hover, .edit-profile:hover, .save-profile:hover, .cancel-edit:hover {
     background-color: #2980b9;
+}
+
+.edit-form {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+.form-group.inline-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.inline-group .form-group {
+    flex: 1;
+    margin-right: 1em;
+}
+
+.inline-group .form-group:last-child {
+    margin-right: 0;
 }

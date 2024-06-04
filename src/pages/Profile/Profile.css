@@ -1,116 +1,138 @@
-.profile-container {
+.user-profile {
+    background: #222831;
+    height: 100vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Adjust the height as needed */
+    margin: 0;
 }
 
-.profile {
-    width: 100%;
-    max-width: 450px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.prof-title {
-    font-size: 24px;
-    margin-bottom: 15px;
-    color: #333333; 
-    font-weight: bold;
-}
-
-.profile-image-container {
+.user-info {
+    background: #f2f2f2; /* Light gray background for contrast */
+    height: 80%;
+    width: 78%;
+    padding: 3em;
+    display: flex;  
+    justify-content: space-between; /* Space between image and text container */
     position: relative;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
-.profile-image {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
+.user-image {
+    height: 100%;
+    width: 45%;
     object-fit: cover;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
-.profile-image-container input[type="file"] {
-    position: absolute;
-    top: 90px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    width: 120px;
-    opacity: 0;
-    cursor: pointer;
-}
-
-.name-inputs {
-    display: flex;
-    gap: 10px;
-}
-
-.prof-inputs, .prof-details {
-    width: 100%;
+.text-info {
+    width: 50%; /* Container for text info */
     display: flex;
     flex-direction: column;
-    gap: 10px;
-}
-
-.prof-inputs input {
-    width: 100%;
-    padding: 10px 12px;
-    font-size: 14px;
-    border: 1px solid #ced4da;
-    border-radius: 8px;
-    box-sizing: border-box;
-    outline: none;
-    transition: border-color 0.3s, box-shadow 0.3s; 
-}
-
-.prof-inputs input::placeholder {
-    color: #6c757d;
-    opacity: 1; 
-}
-
-.prof-inputs input:focus {
-    border-color: #007bff; 
-    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25); 
-}
-
-button.submit-button, button.edit-button, .view-arts-button {
-    margin-top: 10px;
-    padding: 10px 15px;
-    font-size: 14px;
-    color: #ffffff; 
-    background-color: #007bff; 
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s, box-shadow 0.3s; 
-}
-
-button.submit-button:hover,
-button.edit-button:hover, 
-.view-arts-button:hover {
-    background-color: #0056b3; 
-    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2); 
-}
-
-.profile-buttons {
-    display: flex;
     justify-content: center;
-    gap: 10px; /* Adjust gap as needed */
+    align-items: flex-start; /* Align items to the left */
+    padding-left: 2em;
 }
 
-.view-arts-button {
-    display: inline-block;
+.name-section, .bio-section {
+    width: 100%;
+}
+
+.label {
+    font-size: 1.5em;
+    color: #222831;
+    margin-bottom: 0.2em;
+    display: block; /* Block-level element */
+}
+
+.user-name {
+    color: #222831;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.bio {
+    color: #222831;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.contact-info {
+    color: #222831;
+    margin-bottom: 2em;
+}
+
+.contact-info p {
+    font-size: 1.2em;
+    margin: 0.3em 0;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info a {
+    color: #3498db;
     text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-info svg {
+    margin-right: 0.5em;
+}
+
+.button-group {
+    display: flex;
+    gap: 1em;
+}
+
+.see-arts, .edit-profile, .save-profile, .cancel-edit {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
     text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+}
+
+.see-arts:hover, .edit-profile:hover, .save-profile:hover, .cancel-edit:hover {
+    background-color: #2980b9;
+}
+
+.edit-form {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+.form-group.inline-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.inline-group .form-group {
+    flex: 1;
+    margin-right: 1em;
+}
+
+.inline-group .form-group:last-child {
+    margin-right: 0;
 }

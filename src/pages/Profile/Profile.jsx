@@ -1,120 +1,124 @@
 import React, { useState } from 'react';
-import './Profile.css';
-import { Link } from 'react-router-dom'; 
+import './Profile.css'; // Changed CSS filename
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
-const Profile = () => {
+const Profile = () => { // Changed component name
     const [isEditing, setIsEditing] = useState(false);
     const [profile, setProfile] = useState({
-        firstname: 'John',
-        lastname: 'Doe',
-        username: 'johndoe',
-        password: '',
-        email: 'john.doe@example.com',
-        contactNumber: '123-456-7890',
-        profileImage: '1.jpg' 
+        name: 'Eliana Zhu',
+        bio: 'Hello, this is Eliana Zhu. An artist from Batangas. Aspiring to be one of the best artist in our City!',
+        phone: '+1 234 567 890',
+        email: 'elianazhu@gmail.com',
+        facebook: 'https://www.facebook.com/teamuruk',
+        instagram: 'https://www.instagram.com/teamuruk'
     });
 
-    const handleChange = (e) => {
+    const handleInputChange = (e) => {
         const { name, value } = e.target;
-        setProfile((prevProfile) => ({
-            ...prevProfile,
+        setProfile(prevState => ({
+            ...prevState,
             [name]: value
         }));
-    };
-
-    const toggleEdit = () => {
-        setIsEditing(!isEditing);
     };
 
     const handleSubmit = (e) => {
         e.preventDefault();
         setIsEditing(false);
-        // Perform any additional save logic here
-    };
-
-    const handleImageChange = (e) => {
-        const file = e.target.files[0];
-        if (file) {
-            const reader = new FileReader();
-            reader.onloadend = () => {
-                setProfile((prevProfile) => ({
-                    ...prevProfile,
-                    profileImage: reader.result
-                }));
-            };
-            reader.readAsDataURL(file);
-        }
     };
 
     return (
-        <div className="profile-container">
-            <div className="profile">
-                <h2 className="prof-title">My Profile</h2>
-                <div className="profile-image-container">
-                    <img src={profile.profileImage} alt="Profile" className="profile-image"/>
-                    {isEditing && <input type="file" onChange={handleImageChange} />}
+        <div className="user-profile"> {/* Changed className */}
+            <div className='user-info'> {/* Changed className */}
+                <img className='user-image' src="strongest.jpg" alt="Profile Image" /> {/* Changed className */}
+                <div className="text-info"> {/* Changed className */}
+                    {isEditing ? (
+                        <form className="edit-form" onSubmit={handleSubmit}>
+                            <div className="form-group">
+                                <label className="label">Name:</label>
+                                <input 
+                                    type="text" 
+                                    name="name" 
+                                    value={profile.name} 
+                                    onChange={handleInputChange} 
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label className="label">Bio:</label>
+                                <textarea 
+                                    name="bio" 
+                                    value={profile.bio} 
+                                    onChange={handleInputChange} 
+                                />
+                            </div>
+                            <div className="form-group inline-group">
+                                <div className="form-group">
+                                    <label className="label">Phone:</label>
+                                    <input 
+                                        type="text" 
+                                        name="phone" 
+                                        value={profile.phone} 
+                                        onChange={handleInputChange} 
+                                    />
+                                </div>
+                                <div className="form-group">
+                                    <label className="label">Email:</label>
+                                    <input 
+                                        type="email" 
+                                        name="email" 
+                                        value={profile.email} 
+                                        onChange={handleInputChange} 
+                                    />
+                                </div>
+                            </div>
+                            <div className="form-group">
+                                <label className="label">Facebook:</label>
+                                <input 
+                                    type="text" 
+                                    name="facebook" 
+                                    value={profile.facebook} 
+                                    onChange={handleInputChange} 
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label className="label">Instagram:</label>
+                                <input 
+                                    type="text" 
+                                    name="instagram" 
+                                    value={profile.instagram} 
+                                    onChange={handleInputChange} 
+                                />
+                            </div>
+                            <div className="button-group">
+                                <button type="submit" className="save-profile">Save Profile</button>
+                                <button type="button" onClick={() => setIsEditing(false)} className="cancel-edit">Cancel</button>
+                            </div>
+                        </form>
+                    ) : (
+                        <>
+                            <div className="name-section">
+                                <label className="label">Name:</label>
+                                <h1 className='user-name'>{profile.name}</h1> {/* Changed className */}
+                            </div>
+                            <div className="bio-section">
+                                <label className="label">Bio:</label>
+                                <p className='bio'>{profile.bio}</p> {/* Changed className */}
+                            </div>
+                            <div className='contact-info'>
+                                <p><FontAwesomeIcon icon={faPhone} /> {profile.phone}</p>
+                                <p><FontAwesomeIcon icon={faEnvelope} /> {profile.email}</p>
+                                <p><FontAwesomeIcon icon={faFacebook} /> <a href={profile.facebook} target="_blank" rel="noopener noreferrer">Facebook</a></p>
+                                <p><FontAwesomeIcon icon={faInstagram} /> <a href={profile.instagram} target="_blank" rel="noopener noreferrer">Instagram</a></p>
+                            </div>
+                            <div className='button-group'>
+                                <Link to="/gallery" className='see-arts'>View Arts</Link>
+                                <button onClick={() => setIsEditing(true)} className='edit-profile'>Edit Profile</button> {/* Changed className */}
+                            </div>
+                        </>
+                    )}
                 </div>
-                {isEditing ? (
-                    <form className="prof-inputs" onSubmit={handleSubmit}>
-                        <div className="name-inputs">
-                            <input 
-                                type="text" 
-                                name="firstname" 
-                                value={profile.firstname} 
-                                onChange={handleChange} 
-                                placeholder="Firstname" 
-                            />
-                            <input 
-                                type="text" 
-                                name="lastname" 
-                                value={profile.lastname} 
-                                onChange={handleChange} 
-                                placeholder="Lastname" 
-                            />
-                        </div>
-                        <input 
-                            type="text" 
-                            name="username" 
-                            value={profile.username} 
-                            onChange={handleChange} 
-                            placeholder="Username" 
-                        />
-                        <input 
-                            type="password" 
-                            name="password" 
-                            value={profile.password} 
-                            onChange={handleChange} 
-                            placeholder="Password" 
-                        />
-                        <input 
-                            type="email" 
-                            name="email" 
-                            value={profile.email} 
-                            onChange={handleChange} 
-                            placeholder="Email" 
-                        />
-                        <input 
-                            type="tel" 
-                            name="contactNumber" 
-                            value={profile.contactNumber} 
-                            onChange={handleChange} 
-                            placeholder="Contact Number" 
-                        />
-                        <button className="submit-button" type="submit">Save</button>
-                    </form>
-                ) : (
-                    <div className="prof-details">
-                        <p><strong>Firstname:</strong> {profile.firstname}</p>
-                        <p><strong>Lastname:</strong> {profile.lastname}</p>
-                        <p><strong>Username:</strong> {profile.username}</p>
-                        <p><strong>Email:</strong> {profile.email}</p>
-                        <p><strong>Contact Number:</strong> {profile.contactNumber}</p>
-                        <div className="profile-buttons">
-                            <button className="edit-button" onClick={toggleEdit}>Edit Profile</button>
-                            <Link to="/gallery" className="view-arts-button">View Arts</Link>
-                        </div>
-                    </div>
-                )}
             </div>
         </div>
     );
