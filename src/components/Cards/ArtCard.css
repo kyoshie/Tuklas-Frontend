@@ -35,8 +35,8 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
     position: relative;
+    width: 100px;
 }
 .approve:hover::after{
     content: '✔';
@@ -45,10 +45,10 @@
 }
 
 .decline {
-    padding: 10px 30px;
+    padding: 10px 20px;
     font-size: 16px;
     color: #fff;
-    background-color: #007bff; 
+    background-color: #ff0000; 
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -56,14 +56,14 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
     margin-left: 10px;
     position: relative;
+    width: 100px;
 }
 
 .decline:hover::after {
     content: '✖';
-    color: red;
+    color: white;
     position: absolute;
 
 }
