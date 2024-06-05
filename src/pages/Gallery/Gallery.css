@@ -1,5 +1,5 @@
 .gallery{
-    background: #222831;
+    background: linear-gradient(to bottom, #222831, #7F7A85);
     height: 100vh;
     width: 100vw;  
     overflow-y: hidden;
