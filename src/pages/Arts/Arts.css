@@ -9,7 +9,7 @@
 .art-page .art-inner {
     display: flex;
     flex-wrap: wrap;
-    height: 75dvh;
+    height: 90dvh;
     overflow-y: scroll;
     justify-content: center;
 }
