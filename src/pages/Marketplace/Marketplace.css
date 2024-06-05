@@ -1,5 +1,5 @@
 .market{
-    background: #222831;
+    background: linear-gradient(to bottom, #222831, #808080);
     height: 100vh;
     width: 100vw;  
     overflow-y: hidden;
