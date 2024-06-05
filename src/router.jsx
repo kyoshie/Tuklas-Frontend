@@ -10,7 +10,6 @@ import Navbar from './components/Navbar/Navbar';
 import Marketplace from './pages/Marketplace/Marketplace';
 import Gallery from './pages/Gallery/Gallery';
 import Profile from './pages/Profile/Profile';
-import Admin from "./pages/Admin/Admin";
 import AdminProfile from "./pages/AdminProfile/AdminProfile";
 import AdminNav from './components/Navbar/AdminNav';
 import Arts from './pages/Arts/Arts';
