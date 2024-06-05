@@ -17,6 +17,7 @@
     justify-content: space-between; /* Space between image and text container */
     position: relative;
     border-radius: 10px;
+    overflow: hidden; /* Ensure no overflow */
 }
 
 .user-image {
@@ -40,10 +41,7 @@
 }
 
 .label {
-    font-size: 1.5em;
-    color: #222831;
-    margin-bottom: 0.2em;
-    display: block; /* Block-level element */
+    display: none; /* Hide labels */
 }
 
 .user-name {
@@ -126,6 +124,12 @@
     font-size: 1.2em;
     border: 1px solid #ccc;
     border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+    color: #222831; /* Text color */
+}
+
+.form-group input::placeholder, .form-group textarea::placeholder {
+    color: #999999; /* Placeholder color */
 }
 
 .inline-group .form-group {

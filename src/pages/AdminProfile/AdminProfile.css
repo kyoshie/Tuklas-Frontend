@@ -1,4 +1,4 @@
-.admin-profile {
+.user-profile-v2 {
     background: #222831;
     height: 100vh;
     width: 100vw;
@@ -8,7 +8,7 @@
     margin: 0;
 }
 
-.admin-info {
+.user-info-v2 {
     background: #f2f2f2; /* Light gray background for contrast */
     height: 80%;
     width: 78%;
@@ -17,16 +17,17 @@
     justify-content: space-between; /* Space between image and text container */
     position: relative;
     border-radius: 10px;
+    overflow: hidden; /* Ensure no overflow */
 }
 
-.image-profile {
+.user-image-v2 {
     height: 100%;
     width: 45%;
     object-fit: cover;
     border-radius: 10px;
 }
 
-.text-info {
+.text-info-v2 {
     width: 50%; /* Container for text info */
     display: flex;
     flex-direction: column;
@@ -35,60 +36,53 @@
     padding-left: 2em;
 }
 
-.name-section, .bio-section {
+.name-section-v2, .bio-section-v2 {
     width: 100%;
 }
 
-.label {
-    font-size: 1.5em;
-    color: #222831;
-    margin-bottom: 0.2em;
-    display: block; /* Block-level element */
-}
-
-.admin-name {
+.user-name-v2 {
     color: #222831;
     font-size: 2.5em;
     margin-bottom: 0.5em;
 }
 
-.bio {
+.bio-v2 {
     color: #222831;
     font-size: 1.5em;
     margin-bottom: 1em;
 }
 
-.contact-info {
+.contact-info-v2 {
     color: #222831;
     margin-bottom: 2em;
 }
 
-.contact-info p {
+.contact-info-v2 p {
     font-size: 1.2em;
     margin: 0.3em 0;
     display: flex;
     align-items: center;
 }
 
-.contact-info a {
+.contact-info-v2 a {
     color: #3498db;
     text-decoration: none;
 }
 
-.contact-info a:hover {
+.contact-info-v2 a:hover {
     text-decoration: underline;
 }
 
-.contact-info svg {
+.contact-info-v2 svg {
     margin-right: 0.5em;
 }
 
-.button-group {
+.button-group-v2 {
     display: flex;
     gap: 1em;
 }
 
-.see-arts, .edit-profile, .save-profile, .cancel-edit {
+.see-arts-v2, .edit-profile-v2, .save-profile-v2, .cancel-edit-v2 {
     display: inline-block;
     padding: 10px 20px;
     background-color: #3498db;
@@ -102,37 +96,43 @@
     border: none;
 }
 
-.see-arts:hover, .edit-profile:hover, .save-profile:hover, .cancel-edit:hover {
+.see-arts-v2:hover, .edit-profile-v2:hover, .save-profile-v2:hover, .cancel-edit-v2:hover {
     background-color: #2980b9;
 }
 
-.edit-form {
+.edit-form-v2 {
     width: 100%;
 }
 
-.form-group {
+.form-group-v2 {
     margin-bottom: 1em;
     width: 100%;
 }
 
-.form-group.inline-group {
+.form-group-v2.inline-group-v2 {
     display: flex;
     justify-content: space-between;
 }
 
-.form-group input, .form-group textarea {
+.form-group-v2 input, .form-group-v2 textarea {
     width: 100%;
     padding: 10px;
     font-size: 1.2em;
     border: 1px solid #ccc;
     border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+    color: #222831; /* Text color */
 }
 
-.inline-group .form-group {
+.form-group-v2 input::placeholder, .form-group-v2 textarea::placeholder {
+    color: #999999; /* Placeholder color */
+}
+
+.inline-group-v2 .form-group-v2 {
     flex: 1;
     margin-right: 1em;
 }
 
-.inline-group .form-group:last-child {
+.inline-group-v2 .form-group-v2:last-child {
     margin-right: 0;
 }

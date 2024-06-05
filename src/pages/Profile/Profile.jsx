@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
-import './Profile.css'; // Changed CSS filename
+import './Profile.css'; 
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
-const Profile = () => { // Changed component name
+const Profile = () => { 
     const [isEditing, setIsEditing] = useState(false);
     const [profile, setProfile] = useState({
         name: 'Eliana Zhu',
-        bio: 'Hello, this is Eliana Zhu. An artist from Batangas. Aspiring to be one of the best artist in our City!',
+        bio: 'Hello, this is Eliana Zhu. An artist from Batangas. Aspiring to be one of the best artists in our city!',
         phone: '+1 234 567 890',
         email: 'elianazhu@gmail.com',
         facebook: 'https://www.facebook.com/teamuruk',
@@ -30,65 +30,65 @@ const Profile = () => { // Changed component name
     };
 
     return (
-        <div className="user-profile"> {/* Changed className */}
-            <div className='user-info'> {/* Changed className */}
-                <img className='user-image' src="strongest.jpg" alt="Profile Image" /> {/* Changed className */}
-                <div className="text-info"> {/* Changed className */}
+        <div className="user-profile">
+            <div className='user-info'>
+                <img className='user-image' src="strongest.jpg" alt="Profile Image" />
+                <div className="text-info">
                     {isEditing ? (
                         <form className="edit-form" onSubmit={handleSubmit}>
                             <div className="form-group">
-                                <label className="label">Name:</label>
                                 <input 
                                     type="text" 
                                     name="name" 
                                     value={profile.name} 
-                                    onChange={handleInputChange} 
+                                    onChange={handleInputChange}
+                                    placeholder="Enter your name" 
                                 />
                             </div>
                             <div className="form-group">
-                                <label className="label">Bio:</label>
                                 <textarea 
                                     name="bio" 
                                     value={profile.bio} 
-                                    onChange={handleInputChange} 
+                                    onChange={handleInputChange}
+                                    placeholder="Enter your bio" 
                                 />
                             </div>
                             <div className="form-group inline-group">
                                 <div className="form-group">
-                                    <label className="label">Phone:</label>
                                     <input 
                                         type="text" 
                                         name="phone" 
                                         value={profile.phone} 
-                                        onChange={handleInputChange} 
+                                        onChange={handleInputChange}
+                                        placeholder="Enter your phone" 
                                     />
                                 </div>
                                 <div className="form-group">
-                                    <label className="label">Email:</label>
                                     <input 
                                         type="email" 
                                         name="email" 
                                         value={profile.email} 
-                                        onChange={handleInputChange} 
+                                        onChange={handleInputChange}
+                                        placeholder="Enter your email" 
                                     />
                                 </div>
                             </div>
                             <div className="form-group">
-                                <label className="label">Facebook:</label>
                                 <input 
                                     type="text" 
                                     name="facebook" 
                                     value={profile.facebook} 
-                                    onChange={handleInputChange} 
+                                    onChange={handleInputChange}
+                                    placeholder="Enter your Facebook URL" 
                                 />
                             </div>
                             <div className="form-group">
-                                <label className="label">Instagram:</label>
                                 <input 
                                     type="text" 
                                     name="instagram" 
                                     value={profile.instagram} 
-                                    onChange={handleInputChange} 
+                                    onChange={handleInputChange}
+                                    placeholder="Enter your Instagram URL" 
                                 />
                             </div>
                             <div className="button-group">
@@ -99,12 +99,10 @@ const Profile = () => { // Changed component name
                     ) : (
                         <>
                             <div className="name-section">
-                                <label className="label">Name:</label>
-                                <h1 className='user-name'>{profile.name}</h1> {/* Changed className */}
+                                <h1 className='user-name'>{profile.name}</h1>
                             </div>
                             <div className="bio-section">
-                                <label className="label">Bio:</label>
-                                <p className='bio'>{profile.bio}</p> {/* Changed className */}
+                                <p className='bio'>{profile.bio}</p>
                             </div>
                             <div className='contact-info'>
                                 <p><FontAwesomeIcon icon={faPhone} /> {profile.phone}</p>
@@ -114,7 +112,7 @@ const Profile = () => { // Changed component name
                             </div>
                             <div className='button-group'>
                                 <Link to="/gallery" className='see-arts'>View Arts</Link>
-                                <button onClick={() => setIsEditing(true)} className='edit-profile'>Edit Profile</button> {/* Changed className */}
+                                <button onClick={() => setIsEditing(true)} className='edit-profile'>Edit Profile</button>
                             </div>
                         </>
                     )}

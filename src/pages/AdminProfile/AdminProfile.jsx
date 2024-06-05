@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
-import './AdminProfile.css';
+import './AdminProfile.css'; 
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
-const AdminProfile = () => {
+const AdminProfile = () => { 
     const [isEditing, setIsEditing] = useState(false);
     const [profile, setProfile] = useState({
         name: 'Team Uruk',
-        bio: 'This is Team Uruk admin profile. Here you can find more information about our team and the projects we are working on. Stay tuned for more updates!',
+        bio: 'Hello, this is Team Uruk admin profile. We are students from University of Batangas!',
         phone: '+1 234 567 890',
-        email: 'teamuruk@example.com',
+        email: 'elianazhu@gmail.com',
         facebook: 'https://www.facebook.com/teamuruk',
         instagram: 'https://www.instagram.com/teamuruk'
     });
@@ -30,91 +30,89 @@ const AdminProfile = () => {
     };
 
     return (
-        <div className="admin-profile"> 
-            <div className='admin-info'>
-                <img className='image-profile' src="gojo.jpg" alt="Profile Image" />
-                <div className="text-info">
+        <div className="user-profile-v2">
+            <div className='user-info-v2'>
+                <img className='user-image-v2' src="strongest.jpg" alt="Profile Image" />
+                <div className="text-info-v2">
                     {isEditing ? (
-                        <form className="edit-form" onSubmit={handleSubmit}>
-                            <div className="form-group">
-                                <label className="label">Name:</label>
+                        <form className="edit-form-v2" onSubmit={handleSubmit}>
+                            <div className="form-group-v2">
                                 <input 
                                     type="text" 
                                     name="name" 
                                     value={profile.name} 
-                                    onChange={handleInputChange} 
+                                    onChange={handleInputChange}
+                                    placeholder="Enter your name" 
                                 />
                             </div>
-                            <div className="form-group">
-                                <label className="label">Bio:</label>
+                            <div className="form-group-v2">
                                 <textarea 
                                     name="bio" 
                                     value={profile.bio} 
-                                    onChange={handleInputChange} 
+                                    onChange={handleInputChange}
+                                    placeholder="Enter your bio" 
                                 />
                             </div>
-                            <div className="form-group inline-group">
-                                <div className="form-group">
-                                    <label className="label">Phone:</label>
+                            <div className="form-group-v2 inline-group-v2">
+                                <div className="form-group-v2">
                                     <input 
                                         type="text" 
                                         name="phone" 
                                         value={profile.phone} 
-                                        onChange={handleInputChange} 
+                                        onChange={handleInputChange}
+                                        placeholder="Enter your phone" 
                                     />
                                 </div>
-                                <div className="form-group">
-                                    <label className="label">Email:</label>
+                                <div className="form-group-v2">
                                     <input 
                                         type="email" 
                                         name="email" 
                                         value={profile.email} 
-                                        onChange={handleInputChange} 
+                                        onChange={handleInputChange}
+                                        placeholder="Enter your email" 
                                     />
                                 </div>
                             </div>
-                            <div className="form-group">
-                                <label className="label">Facebook:</label>
+                            <div className="form-group-v2">
                                 <input 
                                     type="text" 
                                     name="facebook" 
                                     value={profile.facebook} 
-                                    onChange={handleInputChange} 
+                                    onChange={handleInputChange}
+                                    placeholder="Enter your Facebook URL" 
                                 />
                             </div>
-                            <div className="form-group">
-                                <label className="label">Instagram:</label>
+                            <div className="form-group-v2">
                                 <input 
                                     type="text" 
                                     name="instagram" 
                                     value={profile.instagram} 
-                                    onChange={handleInputChange} 
+                                    onChange={handleInputChange}
+                                    placeholder="Enter your Instagram URL" 
                                 />
                             </div>
-                            <div className="button-group">
-                                <button type="submit" className="save-profile">Save Profile</button>
-                                <button type="button" onClick={() => setIsEditing(false)} className="cancel-edit">Cancel</button>
+                            <div className="button-group-v2">
+                                <button type="submit" className="save-profile-v2">Save Profile</button>
+                                <button type="button" onClick={() => setIsEditing(false)} className="cancel-edit-v2">Cancel</button>
                             </div>
                         </form>
                     ) : (
                         <>
-                            <div className="name-section">
-                                <label className="label">Name:</label>
-                                <h1 className='admin-name'>{profile.name}</h1>
+                            <div className="name-section-v2">
+                                <h1 className='user-name-v2'>{profile.name}</h1>
                             </div>
-                            <div className="bio-section">
-                                <label className="label">Bio:</label>
-                                <p className='bio'>{profile.bio}</p>
+                            <div className="bio-section-v2">
+                                <p className='bio-v2'>{profile.bio}</p>
                             </div>
-                            <div className='contact-info'>
+                            <div className='contact-info-v2'>
                                 <p><FontAwesomeIcon icon={faPhone} /> {profile.phone}</p>
                                 <p><FontAwesomeIcon icon={faEnvelope} /> {profile.email}</p>
                                 <p><FontAwesomeIcon icon={faFacebook} /> <a href={profile.facebook} target="_blank" rel="noopener noreferrer">Facebook</a></p>
                                 <p><FontAwesomeIcon icon={faInstagram} /> <a href={profile.instagram} target="_blank" rel="noopener noreferrer">Instagram</a></p>
                             </div>
-                            <div className='button-group'>
-                                <Link to="/arts" className='see-arts'>View Arts</Link>
-                                <button onClick={() => setIsEditing(true)} className='edit-profile'>Edit Profile</button>
+                            <div className='button-group-v2'>
+                                <Link to="/gallery" className='see-arts-v2'>View Arts</Link>
+                                <button onClick={() => setIsEditing(true)} className='edit-profile-v2'>Edit Profile</button>
                             </div>
                         </>
                     )}
