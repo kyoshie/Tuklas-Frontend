@@ -11,6 +11,7 @@
     flex-wrap: wrap;
     height: 75dvh;
     overflow-y: scroll;
+    justify-content: center;
 }
 
 .upload-section {

@@ -29,6 +29,7 @@ const Gallery = () => {
                <GalleryCards/>
                <GalleryCards/>
                <GalleryCards/>
+               <GalleryCards/>
             </div>
         </div>
         

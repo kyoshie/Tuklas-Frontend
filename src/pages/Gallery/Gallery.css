@@ -4,6 +4,7 @@
     width: 100vw;  
     overflow-y: hidden;
     padding: 5em;
+    
 }
 
 .gallery .contents {
@@ -11,6 +12,7 @@
     flex-wrap: wrap;
     height: 75dvh;
     overflow-y: scroll;
+    justify-content: center;
 }
 
 .my-gallery{

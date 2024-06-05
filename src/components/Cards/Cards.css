@@ -1,59 +1,59 @@
-.card {
-    border: 1px solid hsla(160, 43%, 41%, 0.3);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    max-width: 300px;
-    text-align: center;
-    margin: 20px;
-    background-color:  #222831; 
-}
+    .card {
+        border: 1px solid hsla(160, 43%, 41%, 0.3);
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        max-width: 300px;
+        text-align: center;
+        margin: 20px;
+        background-color:  #222831;     
+    }
 
 
-.card-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px 8px 0 0;
-}
+    .card-image {
+        width: 100%;
+        height: auto;
+        border-radius: 8px 8px 0 0;
+    }
 
-.card-title {
-    font-size: 24px;
-    margin: 15px 0;
-    color: white; 
-}
+    .card-title {
+        font-size: 24px;
+        margin: 15px 0;
+        color: white; 
+    }
 
-.card-description {
-    font-size: 16px;
-    color: white;
-    margin-bottom: 15px;
-}
+    .card-description {
+        font-size: 16px;
+        color: white;
+        margin-bottom: 15px;
+    }
 
-.card-price {
-    font-size: 20px;
-    color: #007bff; 
-    margin-bottom: 20px;
-}
+    .card-price {
+        font-size: 20px;
+        color: #007bff; 
+        margin-bottom: 20px;
+    }
 
-.button {
-    padding: 10px 20px;
-    font-size: 16px;
-    color: #fff;
-    background-color: #007bff; 
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, box-shadow 0.3s;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-}
+    .button {
+        padding: 10px 20px;
+        font-size: 16px;
+        color: #fff;
+        background-color: #007bff; 
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, box-shadow 0.3s;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
 
-.button i {
-    margin-right: 8px;
-}
+    .button i {
+        margin-right: 8px;
+    }
 
-.button:hover {
-    background-color: #0056b3; 
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
-}
+    .button:hover {
+        background-color: #0056b3; 
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+    }
