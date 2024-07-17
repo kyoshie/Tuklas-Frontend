@@ -38,21 +38,23 @@ const Marketplace = () => {
                         id="fileUpload"
                     />
                 </div>
-                <Cards />
-                <Cards />
-                <Cards />
-                <Cards />
-                <Cards />
-                <Cards />
-                <Cards />
-                <Cards />
-                <Cards />
-                <Cards />
-                <Cards />
-                <Cards />
-                <Cards />
-                <Cards />
-                <Cards />
+                <div className="card-container">
+                    <Cards />
+                    <Cards />
+                    <Cards />
+                    <Cards />
+                    <Cards />
+                    <Cards />
+                    <Cards />
+                    <Cards />
+                    <Cards />
+                    <Cards />
+                    <Cards />
+                    <Cards />
+                    <Cards />
+                    <Cards />
+                    <Cards />
+                </div>
             </div>
         </div>
     );

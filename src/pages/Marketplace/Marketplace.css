@@ -38,3 +38,9 @@
     background-color:#0056b3; 
     transform: translateY (-3px);
 }
+
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
